@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" fill="none">
+  <!-- 3D Isometric Cube/E Shape -->
+  <g fill="#ffffff" transform="translate(0, 5)">
+    <!-- Top face of cube -->
+    <polygon points="45,0 90,22 45,44 0,22"/>
+    <!-- Left face -->
+    <polygon points="0,22 0,66 45,88 45,44"/>
+    <!-- Inner cut (creates the E shape) -->
+    <polygon points="45,44 45,88 90,66 90,22" fill="#000000"/>
+    <!-- Right visible edge -->
+    <polygon points="45,44 90,22 90,66 45,88" fill="#ffffff"/>
+    <!-- Inner horizontal bars for 3D E effect -->
+    <polygon points="12,33 45,50 45,44 12,27" fill="#ffffff"/>
+    <polygon points="12,55 45,72 45,66 12,49" fill="#ffffff"/>
+    <!-- Outer frame lines -->
+    <path d="M45,0 L90,22 L90,66 L45,88 L0,66 L0,22 Z" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <!-- Inner E cuts -->
+    <path d="M12,27 L45,44 M12,49 L45,66" stroke="#000000" stroke-width="8"/>
+  </g>
+  
+  <!-- EVOLVE Text -->
+  <g fill="#ffffff" transform="translate(110, 15)">
+    <!-- E -->
+    <path d="M0,0 L45,0 L45,12 L12,12 L12,32 L40,32 L40,44 L12,44 L12,58 L45,58 L45,70 L0,70 Z"/>
+    
+    <!-- V -->
+    <path d="M55,0 L72,0 L88,50 L104,0 L121,0 L97,70 L79,70 Z"/>
+    
+    <!-- O -->
+    <path d="M130,0 L175,0 C185,0 190,10 190,20 L190,50 C190,60 185,70 175,70 L130,70 C120,70 115,60 115,50 L115,20 C115,10 120,0 130,0 Z M132,12 C128,12 127,16 127,20 L127,50 C127,54 128,58 132,58 L173,58 C177,58 178,54 178,50 L178,20 C178,16 177,12 173,12 Z"/>
+    
+    <!-- L -->
+    <path d="M200,0 L212,0 L212,58 L250,58 L250,70 L200,70 Z"/>
+    
+    <!-- V -->
+    <path d="M258,0 L275,0 L291,50 L307,0 L324,0 L300,70 L282,70 Z"/>
+    
+    <!-- E -->
+    <path d="M332,0 L377,0 L377,12 L344,12 L344,32 L372,32 L372,44 L344,44 L344,58 L377,58 L377,70 L332,70 Z"/>
+  </g>
+</svg>

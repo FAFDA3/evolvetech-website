@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="EVOLVE TECH GROUP SRL - Soluzioni digitali innovative per infrastrutture complesse. Fibra ottica, reti wireless, smart building e efficientamento energetico." />
+    <meta name="keywords" content="evolve tech, fibra ottica, reti wireless, smart building, IoT, infrastrutture digitali, Roma" />
+    <meta name="author" content="EVOLVE TECH GROUP SRL" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="EVOLVE TECH GROUP SRL" />
+    <meta property="og:description" content="Soluzioni digitali innovative per infrastrutture complesse" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    
+    <!-- Fonts: Bebas Neue (logo style) + Outfit (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>EVOLVE TECH GROUP SRL - Soluzioni Digitali Innovative</title>
+    
+    <style>
+      /* Critical CSS for intro animation */
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        overflow-x: hidden;
+      }
+      
+      .intro-loader {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .intro-loader img {
+        max-width: 300px;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 0.8; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.05); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Initial loader while React loads -->
+      <div class="intro-loader">
+        <img src="/logo-evolve.png" alt="EVOLVE" />
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

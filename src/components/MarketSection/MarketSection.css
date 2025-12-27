@@ -1,0 +1,133 @@
+.markets-section {
+  padding: 6rem 0;
+  background: var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.markets-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.markets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.market-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.market-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.market-image {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(123, 44, 191, 0.1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.market-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-secondary) 100%);
+}
+
+.market-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 4rem;
+  opacity: 0.8;
+  transition: all var(--transition-normal);
+}
+
+.market-card:hover .market-icon {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.market-content {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.market-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+}
+
+.market-content p {
+  color: var(--color-gray-400);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.market-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.market-link svg {
+  transition: transform var(--transition-fast);
+}
+
+.market-link:hover {
+  color: var(--color-white);
+}
+
+.market-link:hover svg {
+  transform: translateX(5px);
+}
+
+.markets-cta {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .markets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .markets-section {
+    padding: 4rem 0;
+  }
+
+  .markets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .market-image {
+    height: 160px;
+  }
+}
+
+

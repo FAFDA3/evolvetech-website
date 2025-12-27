@@ -1,0 +1,119 @@
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-dark-secondary);
+  border-top: 1px solid var(--color-gray-800);
+  padding: 1.5rem 2rem;
+  z-index: 9000;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cookie-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.cookie-text {
+  flex: 1;
+}
+
+.cookie-text h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+.cookie-text p {
+  font-size: 0.9rem;
+  color: var(--color-gray-400);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.cookie-text strong {
+  color: var(--color-white);
+}
+
+.cookie-links {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.cookie-links a {
+  color: var(--color-gray-400);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-links a:hover {
+  color: var(--color-white);
+}
+
+.cookie-links span {
+  color: var(--color-gray-600);
+}
+
+.cookie-actions {
+  flex-shrink: 0;
+}
+
+.btn-cookie-accept {
+  background: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
+}
+
+.btn-cookie-accept:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cookie-banner {
+    padding: 1.25rem;
+  }
+  
+  .cookie-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .cookie-icon {
+    font-size: 2rem;
+  }
+  
+  .cookie-links {
+    justify-content: center;
+  }
+  
+  .btn-cookie-accept {
+    width: 100%;
+  }
+}
+
+
