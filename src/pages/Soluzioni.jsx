@@ -11,24 +11,6 @@ const pageVariants = {
 
 const solutions = [
   {
-    id: "fibra",
-    title: "Fibra Ottica",
-    subtitle: "Infrastrutture ad Alta Velocità",
-    description: "Progettiamo e realizziamo reti in fibra ottica ad alte prestazioni per aziende, pubbliche amministrazioni e operatori telefonici.",
-    features: [
-      "Progettazione reti FTTH / FTTB",
-      "Backbone Networks per data center",
-      "Certificazione e collaudo",
-      "Manutenzione predittiva"
-    ],
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M24 4v40M4 24h40M12 12l24 24M36 12L12 36"/>
-        <circle cx="24" cy="24" r="8"/>
-      </svg>
-    )
-  },
-  {
     id: "wireless",
     title: "Reti Wireless",
     subtitle: "Connettività Senza Confini",

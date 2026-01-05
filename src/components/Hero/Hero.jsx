@@ -6,13 +6,6 @@ import './Hero.css'
 const slides = [
   {
     id: 1,
-    title: "Connessioni in Fibra Ottica",
-    subtitle: "Infrastrutture ad Alta Velocità",
-    description: "Progettiamo e realizziamo reti in fibra ottica ad alte prestazioni per aziende e pubblica amministrazione.",
-    cta: { text: "Scopri le soluzioni", link: "/soluzioni" }
-  },
-  {
-    id: 2,
     title: "Smart Building Solutions",
     subtitle: "Edifici Intelligenti",
     description: "Trasformiamo gli edifici in spazi smart con sistemi integrati di automazione, sicurezza e efficienza energetica.",

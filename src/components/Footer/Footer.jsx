@@ -5,7 +5,6 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const solutions = [
-    { to: '/soluzioni#fibra', label: 'Fibra Ottica' },
     { to: '/soluzioni#wireless', label: 'Reti Wireless' },
     { to: '/soluzioni#smart-building', label: 'Smart Building' },
     { to: '/soluzioni#iot', label: 'IoT & Sensoristica' },

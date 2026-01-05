@@ -16,17 +16,6 @@ const solutions = [
   {
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M24 4v40M4 24h40M12 12l24 24M36 12L12 36"/>
-        <circle cx="24" cy="24" r="8"/>
-      </svg>
-    ),
-    title: "Fibra Ottica",
-    description: "Progettazione e realizzazione di infrastrutture in fibra ottica ad alte prestazioni.",
-    features: ["FTTH / FTTB", "Backbone Networks", "Data Center Connectivity"]
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M24 4v8M24 36v8M44 24h-8M12 24H4"/>
         <circle cx="24" cy="24" r="12"/>
         <path d="M34 14L28 20M14 34l6-6M34 34l-6-6M14 14l6 6"/>
