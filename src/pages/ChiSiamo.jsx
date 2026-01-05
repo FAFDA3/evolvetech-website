@@ -32,12 +32,6 @@ const values = [
   }
 ]
 
-const milestones = [
-  { year: "2021", event: "Fondazione di EVOLVE TECH GROUP SRL" },
-  { year: "2022", event: "Prime partnership strategiche nel settore enterprise" },
-  { year: "2023", event: "Espansione nel mercato della Pubblica Amministrazione" },
-  { year: "2024", event: "Lancio della piattaforma IoT integrata" }
-]
 
 const ChiSiamo = () => {
   return (
@@ -69,7 +63,7 @@ const ChiSiamo = () => {
             <SectionTransition direction="left" className="content-text">
               <h2>EVOLVE TECH GROUP SRL</h2>
               <p className="lead">
-                Nata nel 2021, EVOLVE TECH GROUP è un'azienda innovativa che si basa 
+                EVOLVE TECH GROUP è un'azienda innovativa che si basa 
                 sulla forte esperienza dei propri dipendenti, tecnici e consulenti su 
                 sistemi ERP e tecnologie Cloud & IoT.
               </p>
@@ -117,38 +111,6 @@ const ChiSiamo = () => {
               </StaggerItem>
             ))}
           </StaggerContainer>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="section">
-        <div className="container container-narrow">
-          <SectionTransition direction="up">
-            <div className="section-header">
-              <span className="section-label">La Nostra Crescita</span>
-              <h2 className="section-title">Timeline</h2>
-            </div>
-          </SectionTransition>
-
-          <div className="timeline">
-            {milestones.map((milestone, index) => (
-              <SectionTransition 
-                key={index} 
-                direction={index % 2 === 0 ? "left" : "right"}
-                delay={index * 0.1}
-              >
-                <div className="timeline-item">
-                  <div className="timeline-marker">
-                    <span className="timeline-hex"></span>
-                  </div>
-                  <div className="timeline-content">
-                    <span className="timeline-year">{milestone.year}</span>
-                    <p>{milestone.event}</p>
-                  </div>
-                </div>
-              </SectionTransition>
-            ))}
-          </div>
         </div>
       </section>
 

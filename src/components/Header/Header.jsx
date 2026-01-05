@@ -36,7 +36,7 @@ const Header = () => {
     { to: '/chi-siamo', label: 'Chi Siamo' },
     { to: '/soluzioni', label: 'Soluzioni' },
     { to: '/mercati', label: 'Mercati' },
-    { to: '/partner', label: 'Partner' },
+    { to: '/outsourcing', label: 'Outsourcing' },
     { to: '/contatti', label: 'Contatti' },
   ]
 

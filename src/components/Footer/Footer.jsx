@@ -23,7 +23,7 @@ const Footer = () => {
 
   const company = [
     { to: '/chi-siamo', label: 'Chi Siamo' },
-    { to: '/partner', label: 'Partner' },
+    { to: '/outsourcing', label: 'Outsourcing' },
     { to: '/contatti', label: 'Contatti' },
     { to: '/privacy-policy', label: 'Privacy Policy' },
     { to: '/cookie-policy', label: 'Cookie Policy' },

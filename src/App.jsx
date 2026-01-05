@@ -9,7 +9,7 @@ import Home from './pages/Home'
 import ChiSiamo from './pages/ChiSiamo'
 import Soluzioni from './pages/Soluzioni'
 import Mercati from './pages/Mercati'
-import Partner from './pages/Partner'
+import Outsourcing from './pages/Outsourcing'
 import Contatti from './pages/Contatti'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CookiePolicy from './pages/CookiePolicy'
@@ -54,7 +54,7 @@ function App() {
               <Route path="/chi-siamo" element={<ChiSiamo />} />
               <Route path="/soluzioni" element={<Soluzioni />} />
               <Route path="/mercati" element={<Mercati />} />
-              <Route path="/partner" element={<Partner />} />
+              <Route path="/outsourcing" element={<Outsourcing />} />
               <Route path="/contatti" element={<Contatti />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />

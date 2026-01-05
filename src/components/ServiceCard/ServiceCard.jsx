@@ -24,3 +24,4 @@ const ServiceCard = ({ icon, title, description, delay = 0 }) => {
 export default ServiceCard
 
 
+
